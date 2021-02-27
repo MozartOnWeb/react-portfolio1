@@ -20,9 +20,7 @@ const Sider = () => {
   };
 
   return (
-    <motion.div
-      className="humburger-container"
-      >
+    <motion.div className="humburger-container">
       <Menu
         mode="horizontal"
         selectedKeys={[current]}
@@ -30,11 +28,11 @@ const Sider = () => {
         style={{ backgroundColor: "transparent", color: "#fff", padding: "0" }}>
         <SubMenu key="humburger" title={<RiMenu4Fill />}>
           <Menu.Item key="projets" icon={<AiOutlineFileProtect />}>
-            <Link to="/projets">Projets</Link>
+            <Link to="/react-portfolio1/projets">Projets</Link>
           </Menu.Item>
 
           <Menu.Item key="skills" icon={<VscProject />}>
-            <Link to="/compétences">Compétences</Link>
+            <Link to="/react-portfolio1/compétences">Compétences</Link>
           </Menu.Item>
         </SubMenu>
       </Menu>
