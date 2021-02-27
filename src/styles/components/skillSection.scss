@@ -1,0 +1,58 @@
+.skill-section {
+  height: 590px;
+  width: 100vw;
+  background-color: $blue;
+  margin-bottom: 5%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include media("<=1200px") {
+    height: 500px;
+  }
+  @include media("<=900px") {
+    height: 400px;
+  }
+  @include media("<=phone") {
+    flex-direction: column;
+    height: 660px;
+  }
+}
+
+// Contact Me
+
+.contact-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+  // a {
+  //   font-size: 14px;
+  //   text-transform: uppercase;
+  //   text-decoration: none;
+  //   color: $blue2;
+  //   font-weight: 550;
+  //   margin-left: 8px;
+  //   @include media("<=900px") {
+  //     font-size: 12px;
+  //   }
+  //   @include media("<=phone") {
+  //     font-size: 10px;
+  //   }
+  // }
+  // p {
+  //   @include media("<=phone") {
+  //     font-size: 13px;
+  //   }
+  // }
+}
+
+// Project Section
+.project-section {
+  svg {
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.05;
+    position: absolute;
+  }
+}

@@ -1,0 +1,97 @@
+.skill-containers {
+  font-family: "Poppins";
+  height: 320px;
+  width: 88%;
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 2px 20px 0 rgba(146, 146, 146, 0.3);
+  backdrop-filter: blur(1px);
+  margin-top: 5%;
+  margin-bottom: -1%;
+  margin-left: 5%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+  @include media("<=tablet") {
+    box-shadow: 0 2px 7px 0 rgba(146, 146, 146, 0.3);
+  }
+
+  .svg-cover {
+    width: 100%;
+    height: 100%;
+    svg {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      opacity: 0.2;
+      fill: #ff64cb;
+    }
+    .adobexd {
+      width: 60%;
+      height: 60%;
+      margin-top: 70px;
+      margin-left: 120px;
+      @include media("<=tablet") {
+        margin-left: 55px;
+      }
+    }
+    .gsap {
+      width: 80%;
+      height: 80%;
+      margin-top: 40px;
+      margin-left: 40px;
+      @include media("<=tablet") {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .skill-infos {
+    z-index: 1;
+    position: absolute;
+    margin-top: -38%;
+    margin-left: 15%;
+    width: 70%;
+    text-align: center;
+    @include media("<=tablet") {
+      margin-top: -70%;
+      width: 80%;
+      margin-left: 10%;
+    }
+    @include media("<=phone") {
+      margin-top: -70%;
+      width: 80%;
+      margin-left: 10%;
+    }
+    @include media("<=320px") {
+      margin-top: -90%;
+      width: 80%;
+      margin-left: 10%;
+    }
+    h2 {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $blue;
+    }
+  }
+}
+
+// Competence Page
+
+.competence-container {
+  grid-gap: 0px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include media("<=tablet") {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  @include media("<=phone") {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+}

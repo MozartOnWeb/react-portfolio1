@@ -1,0 +1,289 @@
+.footer-container {
+  font-family: "Poppins";
+  position: relative;
+  bottom: 0;
+  height: 300px;
+  width: 100vw;
+  background-color: $blue;
+  @include media("<=phone") {
+    height: 280px;
+  }
+
+  svg {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: -12%;
+    top: 0;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    @include media("<=540px") {
+      display: none;
+    }
+    @include media("<=tablet") {
+      right: -6%;
+    }
+    @include media("<=phone") {
+      display: none;
+    }
+  }
+
+  .footer-info {
+    width: 90vw;
+    display: flex;
+    margin: 100px auto;
+    @include media("<=phone") {
+      height: 0;
+      width: 100vw;
+    }
+    a {
+      margin: 20px 90px;
+      color: #FF64CB;
+      @include media("<=phone") {
+        margin-top: 0;
+        margin-left: 30px;
+        margin-bottom: 0;
+        width: 100px;
+        margin-right: 20px;
+        font-size: 11px;
+      }
+    }
+  }
+  .footer-links {
+    margin: 65px 60px;
+    margin-left: 100px;
+    height: 160px;
+    color: #fff;
+    @include media("<=1024px") {
+      margin: 70px 10px;
+      margin-left: 125px;
+    }
+    @include media("<=tablet") {
+      margin: 70px 10px;
+      margin-left: 35px;
+    }
+    @include media("<=phone") {
+      margin: 50px 10px;
+      margin-left: 210px;
+    }
+    @include media("<=320px") {
+      margin: 50px 10px;
+      margin-left: 170px;
+    }
+
+    h4 {
+      text-align: left;
+      color: #fff;
+      text-transform: uppercase;
+      @include media("<=phone") {
+        font-size: 13px;
+      }
+    }
+  }
+  .sub-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    position: relative;
+    margin-top: 60px;
+    .logo {
+      font-family: 'Gobold Uplow';
+      text-align: center;
+    }
+    @include media("<=tablet") {
+      margin-left: -30px;
+    }
+    @include media("<=phone") {
+      margin-left: 30px;
+      position: absolute;
+    }
+    @include media("<=320px") {
+      position: absolute;
+      margin-left: 0px;
+    }
+
+    p {
+      text-align: center;
+      color: #FFD8F2;
+      text-transform: capitalize;
+      font-size: 10.5px;
+      margin-top: 16px;
+      @include media("<=phone") {
+        position: absolute;
+        margin-top: 180px;
+        margin-left: 70px;
+      }
+      @include media("<=320px") {
+        position: absolute;
+        margin-top: 180px;
+        margin-left: 90px;
+      }
+    }
+
+    .footer-socials {
+      width: 200px;
+      margin: 0;
+      margin-left: 100px;
+      @include media("<=phone") {
+        margin-left: 10px;
+        width: 120px;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        @include media("<=phone") {
+          justify-content: center;
+          margin-left: 0px;
+          padding: 0;
+          flex-direction: column;
+          width: 100px;
+        }
+        li {
+          list-style: none;
+          margin-left: -200px;
+          margin-top: 0px;
+          @include media("<=phone") {
+            margin-left: 50px;
+            margin-top: 0px;
+            margin-bottom: -20px;
+          }
+          a {
+            text-decoration: none;
+            svg {
+              fill: #fff;
+              width: 30px;
+              position: relative;
+              transform: rotate(0deg);
+              -webkit-transform: rotate(0deg);
+              -moz-transform: rotate(0deg);
+              -ms-transform: rotate(0deg);
+              -o-transform: rotate(0deg);
+              &:hover {
+                animation: CardAnimation 0.9s ease-out;
+              }
+              @include media("<=900px") {
+                width: 27px;
+              }
+              @include media("<=phone") {
+                display: block;
+                width: 20px;
+              }
+              @include media("<=320px") {
+                width: 20px;
+              }
+            }
+          }
+          .instagram {
+            width: 25px;
+            @include media("<=900px") {
+              width: 18px;
+            }
+            @include media("<=320px") {
+              width: 18px;
+            }
+          }
+          .dribble {
+            width: 25px;
+            @include media("<=900px") {
+              width: 18px;
+            }
+            @include media("<=320px") {
+              width: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-collapse {
+  width: 400px !important;
+  background: transparent !important;
+  border: none !important;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins" !important;
+  @include media("<=1024px") {
+    display: block;
+  }
+  @include media("<=tablet") {
+    display: block;
+  }
+  @include media("<=phone") {
+    display: block;
+  }
+}
+
+.footer-panel {
+  background: transparent !important;
+  border: none !important;
+  font-family: "Poppins";
+  color: #fff !important;
+  width: 170px !important;
+}
+
+.expanded-icon {
+  top: 0 !important;
+  left: 0 !important;
+}
+
+.ant-collapse-content {
+  color:  #6d90a8 !important;
+  opacity: 1 !important;
+  background-color: transparent !important;
+  border-top: none !important;
+  @include media("<=tablet") {
+    font-size: 12px;
+  }
+  @include media("<=phone") {
+    font-size: 10px;
+  }
+}
+
+.ant-collapse-header {
+  color: #fff !important;
+  text-align: left !important;
+  text-transform: uppercase !important;
+}
+
+.ant-collapse ant-collapse-icon-position-left {
+  display: none !important;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  position: relative;
+  padding: 12px 16px;
+  padding-left: 30px !important;
+}
+
+.ant-collapse-content > .ant-collapse-content-box {
+  padding: 0px !important;
+}
+
+@keyframes SocialAnimation {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}

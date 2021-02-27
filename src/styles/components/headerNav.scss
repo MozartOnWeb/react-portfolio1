@@ -1,0 +1,130 @@
+.nav-container {
+  font-family: "Poppins";
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  a:hover {
+    transition: 0.3s ease-in;
+    opacity: 0.85;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+  }
+
+  header {
+    a.active {
+      color: #ff64cb;
+      font-weight: bold;
+    }
+    height: 70px;
+    background-color: $blue2;
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include media("<=900px") {
+      width: 65vw;
+    }
+    @include media("<=540px") {
+        width: 100vw;
+      }
+    @include media("<=phone") {
+      width: 100vw;
+    }
+
+    .logo {
+      margin-left: 75px;
+      color: #fff;
+      font-size: 16px;
+      text-decoration: none;
+      font-family: 'Gobold Uplow';
+      @include media("<=1200px") {
+        margin-left: 20px;
+      }
+      @include media("<=900px") {
+        font-size: 14px;
+        margin-left: 20px;
+      }
+    }
+
+    nav {
+      display: flex;
+      margin-top: 0px;
+      width: 200px;
+      justify-content: space-between;
+      padding-left: 0;
+      list-style: none;
+      margin-left: 25px;
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+        @include media("<=900px") {
+          font-size: 12px;
+        }
+      }
+      @include media("<=1200px") {
+        margin-left: 80px;
+      }
+      @include media("<=900px") {
+        margin-left: 0px;
+        justify-content: space-around;
+      }
+      @include media("<=540px") {
+        display: none;
+      }
+      @include media("<=phone") {
+        display: none !important;
+      }
+    }
+  }
+  .social-header {
+    width: 40vw;
+    @include media("<=540px") {
+      display: none;
+    }
+    @include media("<=phone") {
+      display: none !important;
+    }
+    .social-links {
+      padding: 5px;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li {
+        list-style: none;
+        margin-left: 30px;
+        a {
+          text-decoration: none;
+          svg {
+            margin-top: 10px;
+            width: 30px;
+            @include media("<=900px") {
+              width: 27px;
+            }
+          }
+        }
+        .instagram {
+          width: 25px;
+          @include media("<=900px") {
+            width: 22px;
+          }
+        }
+        .dribble {
+          width: 25px;
+          @include media("<=900px") {
+            width: 22px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,178 @@
+.projet-container {
+  font-family: "Poppins";
+  z-index: 100;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  display: flex;
+  position: relative;
+  width: 100%;
+  @include media("<=540px") {
+    flex-direction: column-reverse;
+    margin-top: 5%;
+    width: 80%;
+  }
+  @include media("<=phone") {
+    flex-direction: column-reverse;
+    margin-top: 5%;
+    width: 80%;
+  }
+
+  .left {
+    width: 60%;
+    @include media("<=540px") {
+      width: 100%;
+    }
+    @include media("<=phone") {
+      width: 100%;
+    }
+    .projet-desc {
+      margin: 18% 20% 20% 20%;
+      text-align: left;
+      @include media("<=540px") {
+        text-align: center;
+        width: 100%;
+        margin: 10% 13%;
+      }
+      @include media("<=phone") {
+        text-align: center;
+        width: 100%;
+        margin: 10% 13%;
+      }
+      .title {
+        text-transform: uppercase;
+        color: #ff64cb;
+        font-weight: 800;
+        font-size: 15px;
+        @include media("<=900px") {
+          font-size: 13px;
+        }
+      }
+      .subtitle {
+        margin-top: -10px;
+        margin-bottom: 30px;
+        font-size: 19px;
+        font-weight: 700;
+        @include media("<=900px") {
+          font-size: 14px;
+        }
+        @include media("<=690px") {
+          margin-bottom: 20px;
+        }
+      }
+      p {
+        @include media("<=1200px") {
+          font-size: 15px;
+        }
+        @include media("<=900px") {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .right {
+    img {
+      margin-top: 8%;
+      margin-right: -50px;
+      border-radius: 13px;
+      width: 770px;
+      height: 380px;
+      -webkit-border-radius: 13px;
+      -moz-border-radius: 13px;
+      -ms-border-radius: 13px;
+      -o-border-radius: 13px;
+      @include media("<=1200px") {
+        width: 600px;
+        height: 300px;
+      }
+      @include media("<=900px") {
+        width: 470px;
+        height: 250px;
+      }
+      @include media("<=phone") {
+        width: 295px;
+        height: 170px;
+        margin-left: 13%;
+      }
+
+      @include media(">=411px") {
+        margin-left: 16%;
+      }
+      @include media(">=414px") {
+        margin-left: 16%;
+      }
+      @include media("<=320px") {
+        margin-left: 13px;
+      }
+    }
+  }
+}
+
+.projet-container.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  @include media("<=540px") {
+    flex-direction: column-reverse;
+  }
+  @include media("<=phone") {
+    flex-direction: column-reverse;
+  }
+  .right {
+    img {
+      margin-top: 8%;
+      margin-left: -80px;
+      @include media("<=900px") {
+        margin-left: -80px;
+      }
+      @include media("<=690px") {
+        margin-left: -80px;
+      }
+      @include media("<=540px") {
+        margin-left: 40px;
+      }
+      @include media("<=phone") {
+        margin-left: 12%;
+      }
+      @include media("<=414px") {
+        margin-left: 16%;
+      }
+      @include media("<=411px") {
+        margin-left: 13%;
+      }
+      @include media("<=320px") {
+        margin-left: 13px;
+      }
+    }
+  }
+  .left {
+    width: 65%;
+    @include media("<=540px") {
+      width: 100%;
+    }
+    @include media("<=phone") {
+      width: 100%;
+    }
+    .projet-desc {
+      margin: 18% 20% 20% 28%;
+      text-align: left;
+      @include media("<=1200px") {
+        margin: 13% 20% 20% 28%;
+      }
+      @include media("<=900px") {
+        margin: 13% 20% 20% 28%;
+      }
+      @include media("<=690px") {
+        margin: 15% 20% 20% 28%;
+      }
+      @include media("<=540px") {
+        text-align: center;
+        width: 100%;
+        margin: 10%;
+      }
+      @include media("<=phone") {
+        text-align: center;
+        width: 100%;
+        margin: 10% 13%;
+      }
+    }
+  }
+}
