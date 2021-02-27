@@ -2,27 +2,40 @@
 @import "./varibles.scss";
 @import "./components/headerNav.scss";
 @import "./components/hero.scss";
-@import './components/projetItem.scss';
-@import './components/skillSection.scss';
-@import './components/skillCard.scss';
-@import './components/footer.scss';
-@import './components/humburger.scss';
-@import './components/skillCard_2.scss';
+@import "./components/projetItem.scss";
+@import "./components/skillSection.scss";
+@import "./components/skillCard.scss";
+@import "./components/footer.scss";
+@import "./components/humburger.scss";
+@import "./components/skillCard_2.scss";
+
+@font-face {
+  font-family: "Gobold Uplow";
+  src: url("//db.onlinewebfonts.com/t/70f30841244dfb7d6b369a86bb62d47e.eot");
+  src: url("//db.onlinewebfonts.com/t/70f30841244dfb7d6b369a86bb62d47e.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/70f30841244dfb7d6b369a86bb62d47e.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/70f30841244dfb7d6b369a86bb62d47e.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/70f30841244dfb7d6b369a86bb62d47e.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/70f30841244dfb7d6b369a86bb62d47e.svg#Gobold Uplow")
+      format("svg");
+}
 
 body,
 html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   scroll-behavior: smooth;
   position: relative;
   overflow-x: hidden;
 }
 
 #root {
-  background-image: url('../assets/svg/1.svg');
+  background-image: url("../assets/svg/1.svg");
   background-size: cover;
 }
-
-
