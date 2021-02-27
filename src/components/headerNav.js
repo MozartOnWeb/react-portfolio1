@@ -25,7 +25,7 @@ const HeaderNav = () => {
           initial={{ y: -100 }}
           animate={{ y: 0 }}
           transition={{ delay: 0.2, type: "spring", stiffness: 120 }}>
-          <NavLink to="/" className="logo" exact>
+          <NavLink to="/react-portfolio1" className="logo" exact>
             MOZaRT
           </NavLink>
         </motion.div>
@@ -35,10 +35,10 @@ const HeaderNav = () => {
           initial={{ y: -100 }}
           animate={{ y: 0 }}
           transition={{ delay: 0.4, type: "spring", stiffness: 120 }}>
-          <NavLink to="/projets" exact>
+          <NavLink to="/react-portfolio1/projets" exact>
             Projets
           </NavLink>
-          <NavLink to="/compétences" exact>
+          <NavLink to="/react-portfolio1/compétences" exact>
             Compétences
           </NavLink>
         </motion.nav>

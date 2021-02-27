@@ -15,12 +15,17 @@ import Footer from "./components/footer";
 import Home from "./pages/home";
 import Competence from "./pages/competence";
 import Projet from "./pages/projet";
+import NotFound from "./pages/404";
 
 // Create Routes
 const routes = [
-  { path: "/", name: "Home", Component: Home },
-  { path: "/compétences", name: "Competence", Component: Competence },
-  { path: "/projets", name: "Projet", Component: Projet },
+  { path: "/react-portfolio1", name: "Home", Component: Home },
+  {
+    path: "/react-portfolio1/compétences",
+    name: "Competence",
+    Component: Competence,
+  },
+  { path: "/react-portfolio1/projets", name: "Projet", Component: Projet },
 ];
 
 function App() {
@@ -39,6 +44,9 @@ function App() {
                 <Component />
               </Route>
             ))}
+            <Route>
+              <NotFound />
+            </Route>
           </Switch>
         </AnimatePresence>
       </div>
